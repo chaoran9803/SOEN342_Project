@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Domain Model" id="fLBSrvhP_NcNxHTmG3_0">
-    <mxGraphModel dx="2110" dy="1160" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3247" dy="1317" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -504,7 +504,177 @@
         <mxCell id="7KDxT98zLahpU-qLOfxo-17" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="name&lt;br&gt;licenseNumber" vertex="1">
           <mxGeometry height="44" width="170" x="1130" y="326" as="geometry" />
         </mxCell>
-      <mxCell id="it2-WaitlistEntry" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="WaitlistEntry" vertex="1"><mxGeometry x="1320" y="790" width="200" height="170" as="geometry" /></mxCell><mxCell id="it2-WaitlistEntry-attrs" parent="it2-WaitlistEntry" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="priority&lt;br&gt;requestDate&lt;br&gt;preferredStartDate&lt;br&gt;preferredEndDate&lt;br&gt;referralType&lt;br&gt;reason&lt;br&gt;status" vertex="1"><mxGeometry y="26" width="200" height="144" as="geometry" /></mxCell><mxCell id="it2-Offer" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Offer" vertex="1"><mxGeometry x="1320" y="1050" width="200" height="70" as="geometry" /></mxCell><mxCell id="it2-Offer-attrs" parent="it2-Offer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="offerDateTime&lt;br&gt;response" vertex="1"><mxGeometry y="26" width="200" height="44" as="geometry" /></mxCell><mxCell id="it2-a-wl-patient" edge="1" parent="1" source="it2-WaitlistEntry" target="7KDxT98zLahpU-qLOfxo-24" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="for"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-wl-patient-ms" connectable="0" parent="it2-a-wl-patient" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-patient-mt" connectable="0" parent="it2-a-wl-patient" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-hp" edge="1" parent="1" source="it2-WaitlistEntry" target="7KDxT98zLahpU-qLOfxo-26" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="requests"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-wl-hp-ms" connectable="0" parent="it2-a-wl-hp" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-hp-mt" connectable="0" parent="it2-a-wl-hp" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..1" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-spec" edge="1" parent="1" source="it2-WaitlistEntry" target="7KDxT98zLahpU-qLOfxo-38" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="requests"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1780" y="830" /><mxPoint x="1780" y="326" /></Array></mxGeometry></mxCell><mxCell id="it2-a-wl-spec-ms" connectable="0" parent="it2-a-wl-spec" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-spec-mt" connectable="0" parent="it2-a-wl-spec" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..1" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-offer" edge="1" parent="1" source="it2-WaitlistEntry" target="it2-Offer" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="receives"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-wl-offer-ms" connectable="0" parent="it2-a-wl-offer" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-wl-offer-mt" connectable="0" parent="it2-a-wl-offer" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-offer-slot" edge="1" parent="1" source="it2-Offer" target="7KDxT98zLahpU-qLOfxo-36" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="proposes"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-offer-slot-ms" connectable="0" parent="it2-a-offer-slot" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-offer-slot-mt" connectable="0" parent="it2-a-offer-slot" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-ResourceRequirement" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="ResourceRequirement" vertex="1"><mxGeometry x="40" y="960" width="170" height="52" as="geometry" /></mxCell><mxCell id="it2-ResourceRequirement-attrs" parent="it2-ResourceRequirement" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="quantity" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry" /></mxCell><mxCell id="it2-Resource" parent="1" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Resource" vertex="1"><mxGeometry x="40" y="1110" width="170" height="52" as="geometry" /></mxCell><mxCell id="it2-Resource-attrs" parent="it2-Resource" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="name" vertex="1"><mxGeometry y="26" width="170" height="26" as="geometry" /></mxCell><mxCell id="it2-Room" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Room" vertex="1"><mxGeometry x="-115" y="1240" width="140" height="52" as="geometry" /></mxCell><mxCell id="it2-Room-attrs" parent="it2-Room" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="roomNumber" vertex="1"><mxGeometry y="26" width="140" height="26" as="geometry" /></mxCell><mxCell id="it2-Equipment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Equipment" vertex="1"><mxGeometry x="55" y="1240" width="140" height="52" as="geometry" /></mxCell><mxCell id="it2-Equipment-attrs" parent="it2-Equipment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="" vertex="1"><mxGeometry y="26" width="140" height="26" as="geometry" /></mxCell><mxCell id="it2-HumanRole" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="HumanRole" vertex="1"><mxGeometry x="225" y="1240" width="140" height="52" as="geometry" /></mxCell><mxCell id="it2-HumanRole-attrs" parent="it2-HumanRole" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="roleName" vertex="1"><mxGeometry y="26" width="140" height="26" as="geometry" /></mxCell><mxCell id="it2-a-svc-req" edge="1" parent="1" source="7KDxT98zLahpU-qLOfxo-22" target="it2-ResourceRequirement" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="requires"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-svc-req-ms" connectable="0" parent="it2-a-svc-req" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-svc-req-mt" connectable="0" parent="it2-a-svc-req" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-req-res" edge="1" parent="1" source="it2-ResourceRequirement" target="it2-Resource" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="of"><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-a-req-res-ms" connectable="0" parent="it2-a-req-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-req-res-mt" connectable="0" parent="it2-a-req-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-appt-res" edge="1" parent="1" source="7KDxT98zLahpU-qLOfxo-12" target="it2-Resource" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" value="reserves"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="540" y="350" /><mxPoint x="540" y="1010" /><mxPoint x="260" y="1010" /><mxPoint x="260" y="1136" /></Array></mxGeometry></mxCell><mxCell id="it2-a-appt-res-ms" connectable="0" parent="it2-a-appt-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1"><mxGeometry relative="1" x="-0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-a-appt-res-mt" connectable="0" parent="it2-a-appt-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1"><mxGeometry relative="1" x="0.85" as="geometry"><mxPoint y="-10" as="offset" /></mxGeometry></mxCell><mxCell id="it2-g-Room" edge="1" parent="1" source="it2-Room" target="it2-Resource" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" value=""><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-g-Equipment" edge="1" parent="1" source="it2-Equipment" target="it2-Resource" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" value=""><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-g-HumanRole" edge="1" parent="1" source="it2-HumanRole" target="it2-Resource" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" value=""><mxGeometry relative="1" as="geometry" /></mxCell><mxCell id="it2-note" parent="1" vertex="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;spacingLeft=8;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Iteration II changes&lt;/b&gt; (green classes)&lt;br&gt;• &lt;b&gt;WaitlistEntry&lt;/b&gt;: a patient waiting for a professional, a specialty and/or a date range; ordered by priority (staff can change it).&lt;br&gt;• &lt;b&gt;Offer&lt;/b&gt;: a freed AvailabilitySlot offered by phone to a waitlisted patient; response = accepted / declined.&lt;br&gt;• &lt;b&gt;Resource&lt;/b&gt;: predefined list (Room, Equipment, HumanRole). Human resources are roles, not specific personnel.&lt;br&gt;• &lt;b&gt;ResourceRequirement&lt;/b&gt;: what a Service needs (resource + quantity); an Appointment reserves the resources."><mxGeometry x="1560" y="960" width="410" height="190" as="geometry" /></mxCell></root>
+        <mxCell id="it2-WaitlistEntry" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="WaitlistEntry" vertex="1">
+          <mxGeometry height="170" width="200" x="1320" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-WaitlistEntry-attrs" parent="it2-WaitlistEntry" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="priority&lt;br&gt;requestDate&lt;br&gt;preferredStartDate&lt;br&gt;preferredEndDate&lt;br&gt;referralType&lt;br&gt;reason&lt;br&gt;status" vertex="1">
+          <mxGeometry height="144" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Offer" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Offer" vertex="1">
+          <mxGeometry height="70" width="200" x="1320" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Offer-attrs" parent="it2-Offer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="offerDateTime&lt;br&gt;response" vertex="1">
+          <mxGeometry height="44" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-wl-patient" edge="1" parent="1" source="it2-WaitlistEntry" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="7KDxT98zLahpU-qLOfxo-24" value="for">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-wl-patient-ms" connectable="0" parent="it2-a-wl-patient" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-patient-mt" connectable="0" parent="it2-a-wl-patient" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-hp" edge="1" parent="1" source="it2-WaitlistEntry" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="7KDxT98zLahpU-qLOfxo-26" value="requests">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-wl-hp-ms" connectable="0" parent="it2-a-wl-hp" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-hp-mt" connectable="0" parent="it2-a-wl-hp" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-spec" edge="1" parent="1" source="it2-WaitlistEntry" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="7KDxT98zLahpU-qLOfxo-38" value="requests">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1780" y="830" />
+              <mxPoint x="1780" y="326" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-spec-ms" connectable="0" parent="it2-a-wl-spec" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-spec-mt" connectable="0" parent="it2-a-wl-spec" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-offer" edge="1" parent="1" source="it2-WaitlistEntry" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="it2-Offer" value="receives">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-wl-offer-ms" connectable="0" parent="it2-a-wl-offer" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-wl-offer-mt" connectable="0" parent="it2-a-wl-offer" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-offer-slot" edge="1" parent="1" source="it2-Offer" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="7KDxT98zLahpU-qLOfxo-36" value="proposes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-offer-slot-ms" connectable="0" parent="it2-a-offer-slot" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-offer-slot-mt" connectable="0" parent="it2-a-offer-slot" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-ResourceRequirement" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="ResourceRequirement" vertex="1">
+          <mxGeometry height="52" width="170" x="40" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-ResourceRequirement-attrs" parent="it2-ResourceRequirement" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="quantity" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Resource" parent="1" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Resource" vertex="1">
+          <mxGeometry height="52" width="170" x="40" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Resource-attrs" parent="it2-Resource" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="name" vertex="1">
+          <mxGeometry height="26" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Room" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Room" vertex="1">
+          <mxGeometry height="52" width="140" x="-115" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Room-attrs" parent="it2-Room" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="roomNumber" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Equipment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="Equipment" vertex="1">
+          <mxGeometry height="52" width="140" x="55" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-Equipment-attrs" parent="it2-Equipment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-HumanRole" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="HumanRole" vertex="1">
+          <mxGeometry height="52" width="140" x="225" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-HumanRole-attrs" parent="it2-HumanRole" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="roleName" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-svc-req" edge="1" parent="1" source="7KDxT98zLahpU-qLOfxo-22" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="it2-ResourceRequirement" value="requires">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-svc-req-ms" connectable="0" parent="it2-a-svc-req" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-svc-req-mt" connectable="0" parent="it2-a-svc-req" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-req-res" edge="1" parent="1" source="it2-ResourceRequirement" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="it2-Resource" value="of">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-a-req-res-ms" connectable="0" parent="it2-a-req-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-req-res-mt" connectable="0" parent="it2-a-req-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-appt-res" edge="1" parent="1" source="7KDxT98zLahpU-qLOfxo-12" style="endArrow=none;html=1;rounded=0;fontSize=11;labelBackgroundColor=#ffffff;" target="it2-Resource" value="reserves">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="350" />
+              <mxPoint x="540" y="1010" />
+              <mxPoint x="260" y="1010" />
+              <mxPoint x="260" y="1136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-appt-res-ms" connectable="0" parent="it2-a-appt-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="*" vertex="1">
+          <mxGeometry relative="1" x="-0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-a-appt-res-mt" connectable="0" parent="it2-a-appt-res" style="edgeLabel;resizable=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="it2-g-Room" edge="1" parent="1" source="it2-Room" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" target="it2-Resource" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-g-Equipment" edge="1" parent="1" source="it2-Equipment" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" target="it2-Resource" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-g-HumanRole" edge="1" parent="1" source="it2-HumanRole" style="endArrow=block;endFill=0;endSize=14;html=1;rounded=0;" target="it2-Resource" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="it2-note" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;align=left;spacingLeft=8;verticalAlign=top;" value="&lt;b&gt;Iteration II changes&lt;/b&gt; (green classes)&lt;br&gt;• &lt;b&gt;WaitlistEntry&lt;/b&gt;: a patient waiting for a professional, a specialty and/or a date range; ordered by priority (staff can change it).&lt;br&gt;• &lt;b&gt;Offer&lt;/b&gt;: a freed AvailabilitySlot offered by phone to a waitlisted patient; response = accepted / declined.&lt;br&gt;• &lt;b&gt;Resource&lt;/b&gt;: predefined list (Room, Equipment, HumanRole). Human resources are roles, not specific personnel.&lt;br&gt;• &lt;b&gt;ResourceRequirement&lt;/b&gt;: what a Service needs (resource + quantity); an Appointment reserves the resources." vertex="1">
+          <mxGeometry height="190" width="410" x="1560" y="960" as="geometry" />
+        </mxCell>
+      </root>
     </mxGraphModel>
   </diagram>
 </mxfile>

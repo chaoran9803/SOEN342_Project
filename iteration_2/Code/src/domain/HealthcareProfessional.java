@@ -50,7 +50,7 @@ public class HealthcareProfessional extends Professional {
     public List<AvailabilitySlot> getSlots(LocalDate startDate, LocalDate endDate) {
         List<AvailabilitySlot> result = new ArrayList<>();
         for (AvailabilitySlot slot : slots) {
-            if (slot.matchesCriteria(startDate, endDate, null)) {
+            if (slot.isWithin(startDate, endDate)) {
                 result.add(slot);
             }
         }

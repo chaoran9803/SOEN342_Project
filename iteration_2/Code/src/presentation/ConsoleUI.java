@@ -154,6 +154,7 @@ public class ConsoleUI {
         for (AvailabilitySlot s : slots) {
             if (s.getSlotId().equalsIgnoreCase(slotId)) {
                 slot = s;
+                break;
             }
         }
         if (slot == null) {

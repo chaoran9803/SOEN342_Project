@@ -23,14 +23,9 @@ public class AvailabilitySlot {
         this.endTime = endTime;
     }
 
-    public boolean matchesCriteria(LocalDate startDate, LocalDate endDate, String locationId) {
-        if (startDate != null && date.isBefore(startDate)) {
-            return false;
-        }
-        if (endDate != null && date.isAfter(endDate)) {
-            return false;
-        }
-        return locationId == null || isAt(locationId);
+    public boolean isWithin(LocalDate startDate, LocalDate endDate) {
+        return (startDate == null || !date.isBefore(startDate))
+                && (endDate == null || !date.isAfter(endDate));
     }
 
     public boolean isAvailable() {

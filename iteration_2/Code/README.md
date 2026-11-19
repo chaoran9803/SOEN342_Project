@@ -11,8 +11,6 @@ javac -d out -sourcepath src src/Main.java
 java -cp out Main
 ```
 
-In Eclipse, import `Code` as an existing project and run `Main`. Set the working directory to the `Code` folder.
-
 ## Quick start
 
 1. Choose **1** and enter `data/availabilities.csv` to load the professionals and their slots.
